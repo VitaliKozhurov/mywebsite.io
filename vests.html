@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="css/style.css">
+   <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet">
+   <title>Gifts & Merch - Жилетки</title>
+</head>
+
+<body>
+   <!-- Всплывающая форма регистрации -->
+   <div class="wrapper-pop_up">
+      <div class="container-pop_up">
+         <div class="pop_up_body">
+            <div class="pop_up_logo"><img src="image/pop_up/horizontal_on_white_by_logaster.png" alt="Логотип магазина"
+                  title="Логотип магазина">
+            </div>
+            <form action="#" method="get" class="pop_up_form">
+               <input type="text" placeholder="Введите имя" required class="input_pop_up" name="name">
+               <input type="tel" placeholder="Введите телефон" required class="input_pop_up" name="phone">
+               <input type="email" placeholder="Введите email" required class="input_pop_up" name="mail">
+               <button class="pop_up_submit">Регистрация</button>
+               <div class="pop_up_close">&#10006;</div>
+            </form>
+         </div>
+      </div>
+   </div>
+   <!-- SVG-спрайт -->
+   <svg xmlns="http://www.w3.org/2000/svg" display="none">
+      <symbol id="facebook" viewBox="0 0 550 550">
+         <g>
+            <circle cx="275" cy="275" r="275" />
+            <path
+               d="M236.1,190.8c0,7.4,0,40.4,0,40.4h-29.6v49.4h29.6V416h60.8V280.5h40.8     c0,0,3.8-23.7,5.7-49.6c-5.3,0-46.2,0-46.2,0s0-28.7,0-33.8c0-5,6.6-11.8,13.2-11.8c6.5,0,20.3,0,33.1,0c0-6.7,0-30,0-51.4     c-17.1,0-36.5,0-45,0C234.6,134,236.1,183.4,236.1,190.8z"
+               fill="#fff" />
+         </g>
+      </symbol>
+      <symbol id="linkedin" viewBox="0 0 48 48">
+         <g>
+            <path fill-rule="evenodd" clip-rule="evenodd"
+               d="M0 24C0 10.7452 10.7452 0 24 0C37.2548 0 48 10.7452 48 24C48 37.2548 37.2548 48 24 48C10.7452 48 0 37.2548 0 24ZM16.9605 19.8778H11.5216V36.2196H16.9605V19.8778ZM17.3188 14.8227C17.2835 13.2204 16.1377 12 14.277 12C12.4164 12 11.2 13.2204 11.2 14.8227C11.2 16.3918 12.3805 17.6473 14.2064 17.6473H14.2412C16.1377 17.6473 17.3188 16.3918 17.3188 14.8227ZM36.5754 26.8497C36.5754 21.8303 33.8922 19.4941 30.3131 19.4941C27.4254 19.4941 26.1326 21.0802 25.4107 22.1929V19.8783H19.9711C20.0428 21.4117 19.9711 36.22 19.9711 36.22H25.4107V27.0934C25.4107 26.605 25.446 26.1178 25.5898 25.7681C25.9829 24.7924 26.8779 23.7822 28.3805 23.7822C30.3494 23.7822 31.1365 25.2807 31.1365 27.4767V36.2196H36.5752L36.5754 26.8497Z" />
+         </g>
+      </symbol>
+      <symbol id="inst" viewBox="0 0 48 48">
+         <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M0 24C0 10.7452 10.7452 0 24 0C37.2548 0 48 10.7452 48 24C48 37.2548 37.2548 48 24 48C10.7452 48 0 37.2548 0 24ZM24.0012 11.2C20.5249 11.2 20.0886 11.2152 18.7233 11.2773C17.3606 11.3397 16.4305 11.5555 15.6166 11.872C14.7747 12.1989 14.0606 12.6363 13.3491 13.348C12.6371 14.0595 12.1997 14.7736 11.8717 15.6152C11.5544 16.4294 11.3384 17.3598 11.2771 18.7219C11.216 20.0873 11.2 20.5238 11.2 24.0001C11.2 27.4764 11.2155 27.9114 11.2773 29.2767C11.34 30.6394 11.5557 31.5695 11.872 32.3834C12.1992 33.2253 12.6365 33.9394 13.3483 34.6509C14.0595 35.3629 14.7736 35.8013 15.615 36.1283C16.4294 36.4448 17.3598 36.6605 18.7222 36.7229C20.0876 36.7851 20.5236 36.8003 23.9996 36.8003C27.4762 36.8003 27.9111 36.7851 29.2765 36.7229C30.6391 36.6605 31.5703 36.4448 32.3848 36.1283C33.2264 35.8013 33.9394 35.3629 34.6506 34.6509C35.3626 33.9394 35.8 33.2253 36.128 32.3837C36.4427 31.5695 36.6587 30.6391 36.7227 29.277C36.784 27.9116 36.8 27.4764 36.8 24.0001C36.8 20.5238 36.784 20.0876 36.7227 18.7222C36.6587 17.3595 36.4427 16.4294 36.128 15.6155C35.8 14.7736 35.3626 14.0595 34.6506 13.348C33.9386 12.636 33.2266 12.1987 32.384 11.872C31.5679 11.5555 30.6373 11.3397 29.2746 11.2773C27.9092 11.2152 27.4746 11.2 23.9972 11.2H24.0012Z" />
+         <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M22.8529 13.5067C23.1937 13.5062 23.574 13.5067 24.0012 13.5067C27.4188 13.5067 27.8239 13.519 29.1735 13.5803C30.4215 13.6374 31.0989 13.8459 31.5501 14.0211C32.1474 14.2531 32.5733 14.5304 33.021 14.9784C33.469 15.4264 33.7464 15.8531 33.9789 16.4505C34.1541 16.9011 34.3629 17.5785 34.4197 18.8265C34.481 20.1758 34.4944 20.5812 34.4944 23.9972C34.4944 27.4132 34.481 27.8186 34.4197 29.1679C34.3626 30.4159 34.1541 31.0933 33.9789 31.5439C33.7469 32.1413 33.469 32.5666 33.021 33.0144C32.573 33.4624 32.1477 33.7397 31.5501 33.9717C31.0994 34.1477 30.4215 34.3557 29.1735 34.4128C27.8242 34.4741 27.4188 34.4874 24.0012 34.4874C20.5833 34.4874 20.1782 34.4741 18.8289 34.4128C17.5809 34.3552 16.9035 34.1466 16.4521 33.9714C15.8547 33.7394 15.428 33.4621 14.98 33.0141C14.532 32.5661 14.2547 32.1405 14.0222 31.5429C13.847 31.0922 13.6382 30.4149 13.5814 29.1669C13.52 27.8175 13.5078 27.4122 13.5078 23.994C13.5078 20.5758 13.52 20.1726 13.5814 18.8233C13.6384 17.5753 13.847 16.8979 14.0222 16.4467C14.2542 15.8494 14.532 15.4227 14.98 14.9747C15.428 14.5267 15.8547 14.2494 16.4521 14.0168C16.9033 13.8408 17.5809 13.6328 18.8289 13.5755C20.0097 13.5222 20.4673 13.5062 22.8529 13.5035V13.5067ZM30.8338 15.632C29.9858 15.632 29.2978 16.3193 29.2978 17.1675C29.2978 18.0155 29.9858 18.7035 30.8338 18.7035C31.6818 18.7035 32.3698 18.0155 32.3698 17.1675C32.3698 16.3195 31.6818 15.632 30.8338 15.632ZM24.0012 17.4267C20.371 17.4267 17.4278 20.37 17.4278 24.0001C17.4278 27.6303 20.371 30.5722 24.0012 30.5722C27.6314 30.5722 30.5735 27.6303 30.5735 24.0001C30.5735 20.37 27.6314 17.4267 24.0012 17.4267Z" />
+         <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M24.0012 19.7334C26.3575 19.7334 28.2679 21.6436 28.2679 24.0001C28.2679 26.3564 26.3575 28.2668 24.0012 28.2668C21.6446 28.2668 19.7345 26.3564 19.7345 24.0001C19.7345 21.6436 21.6446 19.7334 24.0012 19.7334Z" />
+      </symbol>
+      <symbol id="user" viewBox="0 0 32 32">
+         <path d="M16,16A7,7,0,1,0,9,9,7,7,0,0,0,16,16ZM16,4a5,5,0,1,1-5,5A5,5,0,0,1,16,4Z" />
+         <path
+            d="M17,18H15A11,11,0,0,0,4,29a1,1,0,0,0,1,1H27a1,1,0,0,0,1-1A11,11,0,0,0,17,18ZM6.06,28A9,9,0,0,1,15,20h2a9,9,0,0,1,8.94,8Z" />
+      </symbol>
+      <symbol id="search" viewBox="0 0 32 32">
+         <path
+            d="M27.414,24.586l-5.077-5.077C23.386,17.928,24,16.035,24,14c0-5.514-4.486-10-10-10S4,8.486,4,14  s4.486,10,10,10c2.035,0,3.928-0.614,5.509-1.663l5.077,5.077c0.78,0.781,2.048,0.781,2.828,0  C28.195,26.633,28.195,25.367,27.414,24.586z M7,14c0-3.86,3.14-7,7-7s7,3.14,7,7s-3.14,7-7,7S7,17.86,7,14z"
+            id="XMLID_223_" />
+      </symbol>
+
+   </svg>
+   <!-- Заголовок сайта -->
+   <div class="wrapper-header">
+      <header class="header">
+         <!-- Верхняя часть хэдера -->
+         <div class="header-top">
+            <div class="container">
+               <div class="header-top-body">
+                  <a href="index.html" class="top-logo" target="_blank"><img src="image/1header/logo.svg" alt="Логотип"
+                        title="Интернет-магазин Gifts & Merch"></a>
+                  <div class="top-form-search">
+                     <form action="#" method="get" class="form-search-field">
+                        <button type="submit" class="form-search-submit">
+                           <svg class="search">
+                              <use xlink:href="#search"></use>
+                           </svg>
+                        </button>
+                        <input type="text" class="form-search-text" name="search" placeholder="Поиск" required>
+                     </form>
+                     <a href="tel:+380630130103" class="form-search-call btn" title="Связаться с нами по телефону">+380
+                        630 130 103</a>
+                     <a href="#" class="icon-user" title="Форма регистрации на сайте">
+                        <svg class="user">
+                           <use xlink:href="#user"></use>
+                        </svg>
+                     </a>
+                  </div>
+                  <!-- Меню бургер -->
+                  <div class="menu-burger burger_menu">
+                     <span></span>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- Нижняя часть хэдера с навигацией -->
+         <div class="header-bottom">
+            <div class="container">
+               <div class="header-bottom-body">
+                  <nav class="header-nav nav_header">
+                     <ul class="header-nav-list">
+                        <li style="--clr:#00ade1" class="header-nav-item">
+                           <a href="kits.html" title="Перейти к подарочным наборам" class="header-nav-link nav_link"
+                              data-text="&nbsp;Наборы" target="_blank">&nbsp;Наборы&nbsp;
+                           </a>
+                        </li>
+                        <li style="--clr:#ff6493" class="header-nav-item">
+                           <a href="all_products.html" title="Перейти к разделу все товары"
+                              class="header-nav-link nav_link" data-text="&nbsp;Все товары" target="_blank">&nbsp;Все
+                              товары&nbsp;
+                           </a>
+                        </li>
+                        <li style="--clr:#ffdd1c" class="header-nav-item">
+                           <a href="sewing.html" title="Перейти к разделу пошив товаров"
+                              class="header-nav-link nav_link" data-text="&nbsp;Пошив" target="_blank">&nbsp;Пошив&nbsp;
+                           </a>
+                        </li>
+                        <li style="--clr:#00dc82" class="header-nav-item">
+                           <a href="production.html" title="Перейти к разделу производство"
+                              class="header-nav-link nav_link" data-text="&nbsp;Производство"
+                              target="_blank">&nbsp;Производство&nbsp;
+                           </a>
+                        </li>
+                        <li style="--clr:#dc00d4" class="header-nav-item">
+                           <a href="inform.html" title="Перейти к разделу информации о нас"
+                              class="header-nav-link nav_link" data-text="&nbsp;Информация"
+                              target="_blank">&nbsp;Информация&nbsp;
+                           </a>
+                        </li>
+                     </ul>
+                  </nav>
+                  <h3 class="sales">Шопперы со скидкой - 25%</h3>
+                  <div class="sales-pic">
+                     <img src="image/1header/bags.jpg" alt="Сумки" class="bags-mini">
+                  </div>
+               </div>
+            </div>
+         </div>
+      </header>
+      <!-- Главная часть страницы -->
+      <div class="header-presentation">
+         <div class="container container-presentation">
+            <div class="body-presentation-all_products presentation-body">
+               <div class="
+               column1-presentation-all_products presentation-column-one">
+                  <div class="swiper swiper-all_product">
+                     <div class="swiper-wrapper swiper-wrapper-all_product">
+                        <div class="swiper-slide swiper-slide-all_product">
+                           <h1 class="title-presentation-all_products presentation-title">Купить чашку с логотипом
+                           </h1>
+                           <p class="for-big fb-all_products">Чашки с логотипом - это классика. Любая конференция или
+                              бизнес
+                              встреча не обойдется
+                              без данного реквизина. Так же это прекрасный подарок для ваших сотрудников, деловых
+                              партнеров,
+                              друзей или постоянных клиентов . Владельцы заведений общественного питания могут
+                              заказать крупные
+                              партии чашек для своего ресторана или кафе. Также вы можете распространять эти изделия
+                              во время
+                              рекламных мероприятий, презентаций, выставок или конференций.
+                           </p>
+                           <p class="for-small fs-all_products">Чашки с логотипом - это классика. Любая конференция
+                              или бизнес
+                              встреча не
+                              обойдется без данного реквизина. Так же это прекрасный подарок для ваших сотрудников,
+                              деловых
+                              партнеров, друзей или постоянных клиентов.
+                           </p>
+                        </div>
+                        <div class="swiper-slide swiper-slide-all_product">
+                           <h1 class="title-presentation-all_products presentation-title">Купить майку с логотипом
+                           </h1>
+                           <p class="for-big fb-all_products">Футболка с фото и логотипом, надетая на представителя
+                              компании, привлекает внимание и одновременно указывает на принадлежность сотрудника к
+                              конкретному предприятию. Раздавайте промо-одежду на конференции бесплатно, и у ее
+                              участников останется о событии положительные эмоции и, что столь же важно, реальное
+                              напоминание на длительный срок.
+                           </p>
+                           <p class="for-small fs-all_products">Футболка с фото и логотипом, надетая на представителя
+                              компании, привлекает внимание и одновременно указывает на принадлежность сотрудника к
+                              конкретному предприятию.
+                           </p>
+                        </div>
+                        <div class="swiper-slide swiper-slide-all_product">
+                           <h1 class="title-presentation-all_products presentation-title">Купить рюкзак с логотипом
+                           </h1>
+                           <p class="for-big fb-all_products">Пассивная реклама является актуальной, так как заказчику
+                              достаточно один раз оплатить нанесение печати на сувениры. Далее надо распространить их,
+                              чтобы о конкретной организации узнало много людей. Нанесение логотипа на рюкзак принесет
+                              компании множество клиентов на протяжении нескольких лет. Она будет не только в поле
+                              зрения владельца, но и его окружающих. При этом организации ничего не нужно предпринимать
+                              дополнительно.
+                           </p>
+                           <p class="for-small fs-all_products">Пассивная реклама является актуальной, так как заказчику
+                              достаточно один раз оплатить нанесение печати на сувениры. Нанесение логотипа на рюкзак
+                              принесет
+                              компании множество клиентов на протяжении нескольких лет.
+                           </p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class=" column2-presentation-all_products presentation-column-two">
+                  <img src="image/2header-presentation/banner2.svg" alt="Рекламная картинка продукции"
+                     title="Пример выпускаемой продукции">
+               </div>
+            </div>
+            <nav class="breadcrumbs">
+               <ul class="breadcrumbs-body">
+                  <li class="breadcrumbs-item">
+                     <a href="index.html" title="Перейти на главную" class="breadcrumbs-link">Главная</a>
+                  </li>
+                  <li class="breadcrumbs-item">
+                     <a href="all_products.html" title="Перейти в раздел все товары" class="breadcrumbs-link">Все
+                        товары</a>
+                  </li>
+                  <li class="breadcrumbs-item">
+                     <a href="vests.html" title="Посмотр жилеток" class="breadcrumbs-link breadcrumb-active">Жилетки</a>
+                  </li>
+               </ul>
+            </nav>
+         </div>
+      </div>
+   </div>
+   <!-- Контент страницы -->
+   <main class="main">
+      <!-- Навигация по товарам + каталог жилеток -->
+      <section class="all_products">
+         <div class="container">
+            <nav class="all_products-nav">
+               <ul class="all_products-list">
+                  <li class="all_products-item">
+                     <a href="all_products.html" class="all-products-link" title="Перейти к разделу все товары"
+                        target="_blank">Все
+                        товары</a>
+                  </li>
+                  <li class="all_products-item">
+                     <a href="sweatshirt.html" class="all-products-link" title="Просмотр свитшотов"
+                        target="_blank">Свитшоты</a>
+                  </li>
+                  <li class="all_products-item">
+                     <a href="hats.html" class="all-products-link" title="Просмотр шапок" target="_blank">Шапки</a>
+                  </li>
+                  <li class="all_products-item">
+                     <a href="t-shirts.html" class="all-products-link" title="Просмотр маек" target="_blank">Майки</a>
+                  </li>
+                  <li class="all_products-item">
+                     <a href="bags.html" class="all-products-link" title="Просмотр сумок" target="_blank">Сумки</a>
+                  </li>
+                  <li class="all_products-item">
+                     <a href="caps.html" class="all-products-link" title="Просмотр кружек" target="_blank">Кружки</a>
+                  </li>
+                  <li class="all_products-item">
+                     <a href="vests.html" class="all-products-link" title="Просмотр жилеток" target="_blank">Жилетки</a>
+                  </li>
+                  <li class="all_products-item">
+                     <a href="blankets.html" class="all-products-link" title="Просмотр пледов" target="_blank">Пледы</a>
+                  </li>
+                  <li class="all_products-item">
+                     <a href="masks.html" class="all-products-link" title="Просмотр масок" target="_blank">Маски</a>
+                  </li>
+                  <li class="all_products-item">
+                     <a href="usb.html" class="all-products-link" title="Просмотр USB-флеш" target="_blank">Флешки</a>
+                  </li>
+                  <li class="all_products-item">
+                     <a href="eco-products.html" class="all-products-link" title="Просмотр экотоваров"
+                        target="_blank">Экотовары</a>
+                  </li>
+                  <li class="all_products-item">
+                     <a href="diary.html" class="all-products-link" title="Просмотр Ежедневников"
+                        target="_blank">Ежедневники</a>
+                  </li>
+               </ul>
+            </nav>
+            <h3 class="product-item_title">Жилетки</h3>
+            <div class="product-item-cards">
+               <div class="product-item-card">
+                  <div class="product-item-card-pic">
+                     <div class="swiper product-item-card-swiper">
+                        <div class="swiper-wrapper product-item-card-swiper-wrapper">
+                           <div class="swiper-slide"><img class="product-image" src="image/10products/vest1.webp"
+                                 alt="Жилетка" title="Жилетка"></div>
+                           <div class="swiper-slide"><img src="image/10products/vest2.webp" class="product-image"
+                                 alt="Жилетка" title="Жилетка"></div>
+                           <div class="swiper-slide"><img src="image/10products/vest3.webp" class="product-image"
+                                 alt="Жилетка" title="Жилетка"></div>
+                        </div>
+                        <div class="swiper-button-next product-item-card-next"></div>
+                        <div class="swiper-button-prev product-item-card-prev"></div>
+                     </div>
+                  </div>
+                  <div class="product-item-card-descr">
+                     <h4 class="product-item-card-title">Luhta</h4>
+                     <p class="product-item-card-code">Код товара:<br>3210002</p>
+                     <p class="product-item-card-cost">140 б.р.</p>
+                     <p class="product-item-card-proportions">Размер производителя</p>
+                     <ul class="product-item-card-size_list">
+                        <li class="product-item-card-size">42</li>
+                        <li class="product-item-card-size">43</li>
+                        <li class="product-item-card-size">44</li>
+                        <li class="product-item-card-size">48</li>
+                     </ul>
+                     <button class="product-order">В корзину</button>
+                  </div>
+               </div>
+               <div class="product-item-card">
+                  <div class="product-item-card-pic">
+                     <div class="swiper product-item-card-swiper">
+                        <div class="swiper-wrapper product-item-card-swiper-wrapper">
+                           <div class="swiper-slide"><img class="product-image" src="image/10products/vest2.webp"
+                                 alt="Жилетка" title="Жилетка"></div>
+                           <div class="swiper-slide"><img src="image/10products/vest1.webp" class="product-image"
+                                 alt="Жилетка" title="Жилетка"></div>
+                           <div class="swiper-slide"><img src="image/10products/vest3.webp" class="product-image"
+                                 alt="Жилетка" title="Жилетка"></div>
+                        </div>
+                        <div class="swiper-button-next product-item-card-next"></div>
+                        <div class="swiper-button-prev product-item-card-prev"></div>
+                     </div>
+                  </div>
+                  <div class="product-item-card-descr">
+                     <h4 class="product-item-card-title">Luhta</h4>
+                     <p class="product-item-card-code">Код товара:<br>3210002</p>
+                     <p class="product-item-card-cost">140 б.р.</p>
+                     <p class="product-item-card-proportions">Размер производителя</p>
+                     <ul class="product-item-card-size_list">
+                        <li class="product-item-card-size">42</li>
+                        <li class="product-item-card-size">43</li>
+                        <li class="product-item-card-size">44</li>
+                        <li class="product-item-card-size">48</li>
+                     </ul>
+                     <button class="product-order">В корзину</button>
+                  </div>
+               </div>
+               <div class="product-item-card">
+                  <div class="product-item-card-pic">
+                     <div class="swiper product-item-card-swiper">
+                        <div class="swiper-wrapper product-item-card-swiper-wrapper">
+                           <div class="swiper-slide"><img class="product-image" src="image/10products/vest3.webp"
+                                 alt="Жилетка" title="Жилетка"></div>
+                           <div class="swiper-slide"><img src="image/10products/vest2.webp" class="product-image"
+                                 alt="Жилетка" title="Жилетка"></div>
+                           <div class="swiper-slide"><img src="image/10products/vest1.webp" class="product-image"
+                                 alt="Жилетка" title="Жилетка"></div>
+                        </div>
+                        <div class="swiper-button-next product-item-card-next"></div>
+                        <div class="swiper-button-prev product-item-card-prev"></div>
+                     </div>
+                  </div>
+                  <div class="product-item-card-descr">
+                     <h4 class="product-item-card-title">Luhta</h4>
+                     <p class="product-item-card-code">Код товара:<br>3210002</p>
+                     <p class="product-item-card-cost">140 б.р.</p>
+                     <p class="product-item-card-proportions">Размер производителя</p>
+                     <ul class="product-item-card-size_list">
+                        <li class="product-item-card-size">42</li>
+                        <li class="product-item-card-size">43</li>
+                        <li class="product-item-card-size">44</li>
+                        <li class="product-item-card-size">48</li>
+                     </ul>
+                     <button class="product-order">В корзину</button>
+                  </div>
+               </div>
+               <div class="product-item-card">
+                  <div class="product-item-card-pic">
+                     <div class="swiper product-item-card-swiper">
+                        <div class="swiper-wrapper product-item-card-swiper-wrapper">
+                           <div class="swiper-slide"><img class="product-image" src="image/10products/vest1.webp"
+                                 alt="Жилетка" title="Жилетка"></div>
+                           <div class="swiper-slide"><img src="image/10products/vest2.webp" class="product-image"
+                                 alt="Жилетка" title="Жилетка"></div>
+                           <div class="swiper-slide"><img src="image/10products/vest3.webp" class="product-image"
+                                 alt="Жилетка" title="Жилетка"></div>
+                        </div>
+                        <div class="swiper-button-next product-item-card-next"></div>
+                        <div class="swiper-button-prev product-item-card-prev"></div>
+                     </div>
+                  </div>
+                  <div class="product-item-card-descr">
+                     <h4 class="product-item-card-title">Luhta</h4>
+                     <p class="product-item-card-code">Код товара:<br>3210002</p>
+                     <p class="product-item-card-cost">140 б.р.</p>
+                     <p class="product-item-card-proportions">Размер производителя</p>
+                     <ul class="product-item-card-size_list">
+                        <li class="product-item-card-size">42</li>
+                        <li class="product-item-card-size">43</li>
+                        <li class="product-item-card-size">44</li>
+                        <li class="product-item-card-size">48</li>
+                     </ul>
+                     <button class="product-order">В корзину</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- Идеи для заказов -->
+      <section class="ideas ideas-all_products">
+         <div class="container">
+            <div class="ideas-merch">
+               <div class="ideas-merch-descr">
+                  <div class="ideas-merch-box">
+                     <h3 class="ideas-merch-title">У вас своя <span>уникальная</span> идея по разработке мерча?</h3>
+                     <p class="ideas-merch-text">Изготовим мерч по вашему дизайну. Расскажем лайфхаки и ознакомим с
+                        технологией производства, предоставим образцы матералов. </p>
+                  </div>
+               </div>
+               <div class="ideas-merch-pic">
+                  <div class="ideas-pic1"><img src="image/6ideas/lamp.png" alt="Лампочка" title="Идея для мерча"></div>
+                  <div class="ideas-pic2"><img src="image/6ideas/rocket1.png" alt="Ракета"></div>
+                  <div class="ideas-pic3"><img src="image/6ideas/rocket2.png" alt="Ракета"></div>
+               </div>
+            </div>
+            <div class="ideas-form">
+               <div class="ideas-form-box">
+                  <p class="ideas-form-request">Введите свои контактные данные, и наш менеджер свяжется с Вами в
+                     течении
+                     <span>15 минут</span>
+                  </p>
+                  <form action="#" method="get" class="ideas-form-item">
+                     <div class="ideas-form-field"><input type="text" class="ideas-form-data" name="name"
+                           placeholder="Ваше Имя" required></div>
+                     <div class="ideas-form-field">
+                        <input type="text" class="ideas-form-data" name="mail" placeholder="Ваша электронная почта"
+                           required>
+                     </div>
+                     <div class="ideas-form-field"><input type="text" class="ideas-form-data" name="phone"
+                           placeholder="Ваш номер телефона" required></div>
+                     <button class="btn ideas-form-submit" type="submit">Заказать</button>
+                  </form>
+               </div>
+            </div>
+         </div>
+      </section>
+   </main>
+   <!-- Footer -->
+   <footer class="footer">
+      <div class="container">
+         <div class="footer-body">
+            <div class="footer-item1">
+               <div class="footer-item1-logo"><img src="image/8footer/logo.png" alt="Логотип"
+                     title="Интерент-магазин Gifts & Merch"></div>
+               <p class="footer-item1-text">Свежее дыхание в корпоративной жизнии жизни корпоративной дыхание свежее
+               </p>
+            </div>
+            <div class="footer-item2">
+               <nav class="footer-nav">
+                  <ul class="footer-menu">
+                     <li class="footer-menu-item">
+                        <h4 class="footer-menu-descr">Категории</h4>
+                     </li>
+                     <li class="footer-menu-item">
+                        <a href="sewing.html" class="footer-menu-link" title="Перейти к разделу пошив товаров"
+                           target="_blank">Пошив
+                        </a>
+                     </li>
+                     <li class="footer-menu-item">
+                        <a href="all_products.html" class="footer-menu-link" title="Перейти к разделу все товары"
+                           target="_blank">Все
+                           товары
+                        </a>
+                     </li>
+                     <li class="footer-menu-item">
+                        <a href="kits.html" class="footer-menu-link" title="Перейти к подарочным наборам"
+                           target="_blank">Наборы
+                        </a>
+                     </li>
+                     <li class="footer-menu-item">
+                        <a href="production.html" title="Перейти к разделу производство" class="footer-menu-link"
+                           target="_blank">Производство
+                        </a>
+                     </li>
+                  </ul>
+                  <ul class="footer-menu">
+                     <li class="footer-menu-item">
+                        <h4 class="footer-menu-descr">Информация</h4>
+                     </li>
+                     <li class="footer-menu-item">
+                        <a href="inform.html" class="footer-menu-link" title="Перейти к разделу информации о нас"
+                           target="_blank">О нас
+                        </a>
+                     </li>
+                     <li class="footer-menu-item">
+                        <a href="inform.html" title="Контакты для связи с нами" class="footer-menu-link"
+                           target="_blank">Контакты
+                        </a>
+                     </li>
+                  </ul>
+               </nav>
+            </div>
+            <div class="footer-item3">
+               <div class="footer-connect">
+                  <h4 class="footer-form-title">Связаться с менеджером</h4>
+                  <p class="footer-form-text">
+                     Есть вопрос на который не нашли ответ? Оставьте контакт и наш менеджер свяжеться с вами
+                  </p>
+                  <form action="#" method="get" class="footer-form">
+                     <input type="tel" class="footer-form-data" name="phone_request" placeholder="Номер телефона"
+                        required>
+                     <button class="footer-form-send" type="submit"></button>
+                  </form>
+               </div>
+               <div class="footer-contact">
+                  <a href="tel:+380630130103" class="footer-contact-phone" title="Телефон для связи с нами">+380 630 130
+                     103</a>
+                  <a href="mailto:example@gmail.com" title="Адрес нашей электронной почты"
+                     class="footer-contact-mail">example@gmail.com</a>
+                  <div class="footer-contact-socials">
+                     <a href="https://www.facebook.com" target="_blank" class="footer-contact-social social-fb"
+                        title="Мы в Facebook"><svg class="facebook social-icon">
+                           <use xlink:href="#facebook"></use>
+                        </svg>
+                     </a>
+                     <a href="https://www.instagram.com/" target="_blank" class="footer-contact-social social-inst"
+                        title="Мы в Instagram">
+                        <svg class="inst social-icon">
+                           <use xlink:href="#inst"></use>
+                        </svg>
+                     </a>
+                     <a href="https://www.linkedin.com" target="_blank" class="footer-contact-social social-linkedin"
+                        title="Мы в LinkedIn">
+                        <svg class="linkedin social-icon">
+                           <use xlink:href="#linkedin"></use>
+                        </svg>
+                     </a>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <p class="footer-rights">
+            &copy; 2022 . All rights reserved.
+            <span>Политика конфиденциальности</span>
+         </p>
+      </div>
+   </footer>
+   <!-- Подключение Swiper слайдера -->
+   <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+   <!-- Подключение JS файла -->
+   <script src="js/script.js"></script>
+</body>
+
+</html>
